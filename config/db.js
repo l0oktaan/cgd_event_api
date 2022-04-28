@@ -2,7 +2,8 @@ const mysql = require('mysql') // เรียกใช้งาน MySQL module
  
 // กำหนดการเชื่อมต่อฐานข้อมูล
 const db = mysql.createConnection({
-    host     : 'localhost',
+    host: 'localhost',
+    port:'3366',
     user     : 'root',
     password : '123456',
     database : 'cgd_event'

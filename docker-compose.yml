@@ -6,9 +6,9 @@ services:
     env_file: ./.env
     environment:
       - MYSQL_ROOT_PASSWORD=123456
-      - MYSQL_DATABASE=$MYSQLDB_DATABASE
+      - MYSQL_DATABASE=cdg_event
     ports:
-      - $MYSQLDB_LOCAL_PORT:$MYSQLDB_DOCKER_PORT
+      - $MYSQLDB_LOCAL_PORT:3366
     volumes:
       - db:/var/lib/mysql
   app:
